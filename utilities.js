@@ -1,21 +1,27 @@
+function levelSetting(gameWidth, gameHeight, h) {
+  // this is just for not to repeat the same thing
+  game.innerHTML = "";
+  game.style.height = h + "px";
+  createGrid(gameWidth, gameHeight);
+}
+
 function beginner() {
-  // TODO: this function should convert the grid of game into an easy game
+  // this function convert the grid of game into an easy game
+  levelSetting(9, 9, 225);
 }
 
 function intermediate() {
-  // TODO: this function should convert the grid of game into an medium level game
+  // this function convert the grid of game into an medium level game
+  levelSetting(16, 16, 400);
 }
 
 function expert() {
-  // TODO: this function should convert the grid of game into an hard game
+  // this function convert the grid of game into an hard game
+  levelSetting(16, 30, 400);
 }
 
 function custome() {
   // TODO: By this function user can set width and height and count of mins
-}
-
-function newGame() {
-  // TODO: this function should restart the game
 }
 
 function createGrid(width, height) {
@@ -31,12 +37,11 @@ function createGrid(width, height) {
   function createBlock(i, j) {
     const block = document.createElement("div");
     block.classList.add("block");
-    block.classList.add(`block_${i}_${j}`);
+    block.classList.add(`block_${j}_${i}`);
     return block;
   }
 
   const game = document.getElementById("game");
-
   matrix.forEach((row, i) => {
     row.forEach((value, j) => {
       const blockElement = createBlock(i, j);
@@ -52,4 +57,8 @@ function isEmpty(block) {
 
 function isMine(block) {
   // TODO: this function return true if the block is mine
+}
+
+function newGame() {
+  // TODO: this function should restart the game
 }

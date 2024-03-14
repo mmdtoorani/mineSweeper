@@ -12,6 +12,7 @@
 
 .game {
   height: 100px;
+  padding: 0%;
   background-color: rgb(236, 28, 28);
   display: flex;
   flex-flow: column wrap;
