@@ -10,8 +10,12 @@
 }
 
 .game {
-  height: 400px;
+  height: 100px;
   background-color: rgb(236, 28, 28);
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .face {
