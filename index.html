@@ -4,20 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Mine Sweeper</title>
   </head>
   <body>
     <div class="container-fluid">
-      <div class="container info">
-        <div class="row">
-          <div class="mine-count"></div>
-          <div class="restart">
-            <div class="face"></div>
-          </div>
-          <div class="time"></div>
+      <div class="container info">info</div>
+      <div class="container head-game">
+        <div class="mine-count">mine count</div>
+        <div class="restart">
+          <div class="face"></div>
         </div>
-        <div class="row game"></div>
+        <div class="time">198</div>
       </div>
+      <div id="game" class="container game"></div>
     </div>
   </body>
+
+  <!-- import math -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.2/math.js"></script> -->
+  <script src="script.js"></script>
 </html>
