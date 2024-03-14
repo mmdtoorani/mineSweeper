@@ -54,8 +54,8 @@
 // console.log(blk);
 // console.log(blk.func());
 
-let gameWidth = 6;
-let gameHeight = 6;
+let gameWidth = 8;
+let gameHeight = 8;
 let matrix = [];
 
 for (let i = 1; i <= gameHeight; i++) {
