@@ -14,6 +14,6 @@
 // console.log(blk);
 // console.log(blk.func());
 
-let gameWidth = 6;
-let gameHeight = 6;
+let gameWidth = 4;
+let gameHeight = 9;
 createGrid(gameWidth, gameHeight);
