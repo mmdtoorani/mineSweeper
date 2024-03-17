@@ -38,6 +38,18 @@ function createGrid(width, height) {
     const block = document.createElement("div");
     block.classList.add("block");
     block.classList.add(`block_${j}_${i}`);
+    block.setAttribute("xpos", j);
+    block.setAttribute("ypos", i);
+    block.addEventListener("mousedown", function () {
+      this.style.backgroundImage = "url(./img/pressed.svg)";
+      this.addEventListener("mouseout", function () {
+        this.style.backgroundImage = "url(./img/closed.svg)";
+      });
+      this.addEventListener("mouseup", function () {
+        this.style.backgroundImage = "url(./img/closed.svg)";
+      });
+    });
+
     return block;
   }
 
