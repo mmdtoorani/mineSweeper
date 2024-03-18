@@ -4,21 +4,133 @@
   /* background-color: blue; */
 }
 
+/* TODO: set width and height of borders with JS compatible with levels */
+
+.top-boarder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#up-left {
+  background-image: url(./img/corner_up_left_2x.png);
+  background-size: 100% 100%;
+  width: 19.5px;
+  height: 17.875px;
+  float: left;
+}
+
+#up-middle {
+  background-image: url(./img/border_hor_2x.png);
+  background-size: 100% 100%;
+}
+
+#up-right {
+  background-image: url(./img/corner_up_right_2x.png);
+  background-size: 100% 100%;
+  width: 19.5px;
+  height: 17.875px;
+  float: right;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#left-head,
+#right-head {
+  background-image: url(./img/border_vert_2x.png);
+  background-size: 100%;
+  width: 30.5px;
+  height: 52px;
+}
+
 .head-game {
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
 }
 
+.up-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 819px;
+  height: 17.875px;
+}
+
+#up-left-grid {
+  background-image: url(./img/t_left_2x.png);
+  width: 19.5px;
+  height: 17.875px;
+}
+
+#up-middle-grid {
+  background-image: url(./img/border_hor_2x.png);
+  width: 780px;
+  height: 17.875px;
+}
+
+#up-right-grid {
+  background-image: url(./img/t_right_2x.png);
+  width: 19.5px;
+  height: 17.875px;
+}
+
+#grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 819px;
+  height: 416px;
+}
+
+#left-grid,
+#right-grid {
+  background-image: url(./img/border_vert_2x.png);
+  background-size: 100%;
+  width: 19.5px;
+  height: 416px;
+}
+
 .game {
   height: 100px;
   padding: 0%;
-  background-color: rgb(236, 28, 28);
+  /* background-color: rgb(236, 28, 28); */
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
   max-width: fit-content;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#down-left {
+  background-image: url(./img/corner_bottom_left_2x.png);
+  background-size: 100%;
+  width: 19.5px;
+  height: 17.875px;
+}
+
+#down-middle {
+  background-image: url(./img/border_hor_2x.png);
+  background-size: contain;
+  width: 780px;
+  height: 17.875px;
+}
+
+#down-right {
+  background-image: url(./img/corner_bottom_right_2x.png);
+  background-size: 100%;
+  width: 19.5px;
+  height: 17.875px;
 }
 
 .face {

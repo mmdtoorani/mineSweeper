@@ -1,23 +1,28 @@
-function levelSetting(gameWidth, gameHeight, h) {
+function levelSetting(gameWidth, gameHeight, h, w) {
   // this is just for not to repeat the same thing
+  // h = the height of thegrid of blocks (game)
+  // w = the width of the element with class main
+
+  const mainContainer = document.querySelector(".main");
   game.innerHTML = "";
   game.style.height = h + "px";
+  mainContainer.style.width = w + "px";
   createGrid(gameWidth, gameHeight);
 }
 
 function beginner() {
   // this function convert the grid of game into an easy game
-  levelSetting(9, 9, 225);
+  levelSetting(9, 9, 225, 290);
 }
 
 function intermediate() {
   // this function convert the grid of game into an medium level game
-  levelSetting(16, 16, 400);
+  levelSetting(16, 16, 400, 466);
 }
 
 function expert() {
   // this function convert the grid of game into an hard game
-  levelSetting(16, 30, 400);
+  levelSetting(16, 30, 400, 816);
 }
 
 function custome() {
